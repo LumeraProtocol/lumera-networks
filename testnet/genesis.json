@@ -1,7 +1,7 @@
 {
   "app_name": "lumerad",
   "app_version": "0.4.0",
-  "genesis_time": "2025-01-24T00:00:00.000000000Z",
+  "genesis_time": "2025-01-24T00:00:00Z",
   "chain_id": "lumera-testnet-1",
   "initial_height": 1,
   "app_hash": null,
@@ -236,6 +236,13 @@
           "pub_key": null,
           "account_number": "11",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera19w2488ntfgpduzqq3sk4j5x387zynwkntws20l",
+          "pub_key": null,
+          "account_number": "12",
+          "sequence": "0"
         }
       ]
     },
@@ -254,6 +261,15 @@
             {
               "denom": "ulume",
               "amount": "28125000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19w2488ntfgpduzqq3sk4j5x387zynwkntws20l",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -360,12 +376,11 @@
       "supply": [
         {
           "denom": "ulume",
-          "amount": "238500000000000"
+          "amount": "238500001000000"
         }
       ],
       "denom_metadata": [
         {
-          "name": "lume",
           "description": "The native token of lumera",
           "denom_units": [
             {
@@ -384,12 +399,14 @@
             },
             {
               "denom": "lume",
-              "exponent": 6
+              "exponent": 6,
+              "aliases": []
             }
           ],
-          "symbol": "LUME",
           "base": "ulume",
           "display": "lume",
+          "name": "lume",
+          "symbol": "LUME",
           "uri": "",
           "uri_hash": ""
         }

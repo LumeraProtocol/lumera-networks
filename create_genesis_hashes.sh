@@ -27,8 +27,8 @@ TMP_JSON=$(mktemp)
 jq -S '.' "$JSON_PATH" > "$TMP_JSON"
 
 # Generate hashes
-SHA256=$(sha256sum "$TMP_JSON" | cut -d' ' -f1)
-SHA512=$(sha512sum "$TMP_JSON" | cut -d' ' -f1)
+SHA256=$(sha3sum "$TMP_JSON" | cut -d' ' -f1)
+SHA512=$(sha3sum "$TMP_JSON" | cut -d' ' -f1)
 SHAKE128=$(openssl dgst -shake128 "$TMP_JSON" | cut -d' ' -f2)
 SHAKE256=$(openssl dgst -shake256 "$TMP_JSON" | cut -d' ' -f2)
 

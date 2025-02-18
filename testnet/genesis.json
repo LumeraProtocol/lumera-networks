@@ -1,7 +1,7 @@
 {
   "app_name": "lumerad",
   "app_version": "0.4.1",
-  "genesis_time": "2025-01-24T00:00:00.00Z",
+  "genesis_time": "2025-01-24T00:00:00Z",
   "chain_id": "lumera-testnet-1",
   "initial_height": 1,
   "app_hash": null,
@@ -17,7 +17,6 @@
         "sig_verify_cost_secp256k1": "1000"
       },
       "accounts": [
-
         {
           "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
@@ -688,7 +687,7 @@
           "address": "lumera1h56jtjhaagywrw7h40d3crnw0fgh3z4wpqnlet",
           "pub_key": null,
           "account_number": "41",
-          "sequence": "0"  
+          "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
@@ -737,7 +736,7 @@
           "address": "lumera1szsy5yzeun4779259gdhcd8rq8alf2c3zdmul3",
           "pub_key": null,
           "account_number": "48",
-          "sequence": "0"          
+          "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
@@ -801,6 +800,13 @@
           "pub_key": null,
           "account_number": "57",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1c4xhkuac23qjtcxmp7khc6hrk9mur4k7wu8uyx",
+          "pub_key": null,
+          "account_number": "58",
+          "sequence": "0"
         }
       ]
     },
@@ -813,7 +819,6 @@
         "default_send_enabled": true
       },
       "balances": [
-
         {
           "address": "lumera1qxq2jtz7vsjkhxn4yre3nmmr90h0hd7fhhhchu",
           "coins": [
@@ -833,11 +838,38 @@
           ]
         },
         {
+          "address": "lumera1qnnencw6ez6p4cleev9rqxerle00z0rmkk6236",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1qca56eahxzgje7ws6x2njfv79zpuyn922arsnu",
           "coins": [
             {
               "denom": "ulume",
               "amount": "8333333330000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1pzayvp5m0q2sfe6079rrdkq3pvp4r9yp4xfgz4",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1prdknqxwqzuw6g3lu5ejj4zxj7rl4y7l24gndz",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -860,6 +892,24 @@
           ]
         },
         {
+          "address": "lumera1zudwyl92rgzess5722whhthd9am0q8qeekgqcy",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12499973000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1rjkghz0f9cycgl8a64jcsp7c877xppg73ecahh",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1rew6tp6kjg2lu7e6ngg4q4dshn369pcm4jztyc",
           "coins": [
             {
@@ -874,6 +924,33 @@
             {
               "denom": "ulume",
               "amount": "8333333340000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19gca4nhxjd82a72axwswarg748lqpr8mqzk8tf",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19w2488ntfgpduzqq3sk4j5x387zynwkntws20l",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19j48hzgknr7n4n0qcmz5t2ukadnj99q3ch60xq",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -914,6 +991,42 @@
           ]
         },
         {
+          "address": "lumera1x6v6ack0r0nzg375vr2gp74resdjkk4auwslpl",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1f2lgl4t28aw360ps4zyx7aafeh4q5tn3u9ggpx",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera12enffkccgx5a83t40f29u6ydw7r809d3ch3f8a",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1t7w8tadkz4sxycuamkjwl9wuuf6lurkl64xals",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1dpdcxfwalepks44xsd5kwj8sg54s3uqn6dlc64",
           "coins": [
             {
@@ -941,11 +1054,56 @@
           ]
         },
         {
+          "address": "lumera1w44u9dr2arp0v44exm3kw2284ezz83umleac9c",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1szsy5yzeun4779259gdhcd8rq8alf2c3zdmul3",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1s4zqg26he25pzvg6uxy3yfke7yxqzna57n4w70",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1slt5dhxyl7caa58ctd2q3df5ry8e56gsdsg9z6",
           "coins": [
             {
               "denom": "ulume",
               "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera13kz4tdr0ptllpzmz66py3p6kfv8jvrrv8zkyzm",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera13kwez5vpcff3wlur4f5mfqg8zhnw7xmc33e4rn",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -968,6 +1126,24 @@
           ]
         },
         {
+          "address": "lumera1jt9w26mpxxjsk63mvd4m2ynj0af09cslm77a8r",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1jj2n76ehy5x5vcys5xzcvdwqz6mp48rsjg3yhk",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1j4slunrm4ccunxqwv3vw2k26n6zysteq7sg20m",
           "coins": [
             {
@@ -986,11 +1162,29 @@
           ]
         },
         {
+          "address": "lumera15r0nwg2v3jw9rw4dtuqv6jzsdyrze3kd73c8tm",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera152vkjd8gxz6gdwy5yry0eyh532fhhpydqd2739",
           "coins": [
             {
               "denom": "ulume",
               "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera14p3zcjmcmrffmzqr33xzkd2nwf0jlwteyne70t",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -1013,11 +1207,47 @@
           ]
         },
         {
+          "address": "lumera1kh2j6atk9uetrg5jhl44ce5uyd9jlne2uxl5f2",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1h0q29qxftcs59x6erp8fms7uhenaagqrych7ex",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1h56jtjhaagywrw7h40d3crnw0fgh3z4wpqnlet",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1cx9qg7f2ewf8egcrxrxe23ceejdjrfxsmn6nlk",
           "coins": [
             {
               "denom": "ulume",
               "amount": "6250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1c4xhkuac23qjtcxmp7khc6hrk9mur4k7wu8uyx",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -1040,11 +1270,29 @@
           ]
         },
         {
+          "address": "lumera16r8fr455740r4pfq9x6jr3q03wa6e5nnlepykr",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera1m4zz9kxm8nqkcp8u97x9y7em8wuu488cn77dpl",
           "coins": [
             {
               "denom": "ulume",
               "amount": "6250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1mcal5wktxs7yzxusz78mvfvdgxatzcdwk6a9km",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -1058,11 +1306,29 @@
           ]
         },
         {
+          "address": "lumera1u82vm3c9jswn6h6w2ww53sp6swmssn4fsq000e",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
           "address": "lumera17e775lsphtk07rcpcsedap4n6wlxcqj0nhgye9",
           "coins": [
             {
               "denom": "ulume",
               "amount": "5000000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1lqf3cy2kens2tpsr4srs2jysmpau9quajx7l62",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
             }
           ]
         },
@@ -1083,264 +1349,12 @@
               "amount": "8333333330000"
             }
           ]
-        },
-        {
-          "address": "lumera19gca4nhxjd82a72axwswarg748lqpr8mqzk8tf",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1prdknqxwqzuw6g3lu5ejj4zxj7rl4y7l24gndz",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1qnnencw6ez6p4cleev9rqxerle00z0rmkk6236",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera19w2488ntfgpduzqq3sk4j5x387zynwkntws20l",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera13kwez5vpcff3wlur4f5mfqg8zhnw7xmc33e4rn",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1jj2n76ehy5x5vcys5xzcvdwqz6mp48rsjg3yhk",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1jt9w26mpxxjsk63mvd4m2ynj0af09cslm77a8r",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera14p3zcjmcmrffmzqr33xzkd2nwf0jlwteyne70t",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1h0q29qxftcs59x6erp8fms7uhenaagqrych7ex",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1mcal5wktxs7yzxusz78mvfvdgxatzcdwk6a9km",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1h56jtjhaagywrw7h40d3crnw0fgh3z4wpqnlet",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera13kz4tdr0ptllpzmz66py3p6kfv8jvrrv8zkyzm",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1lqf3cy2kens2tpsr4srs2jysmpau9quajx7l62",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera15r0nwg2v3jw9rw4dtuqv6jzsdyrze3kd73c8tm",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1f2lgl4t28aw360ps4zyx7aafeh4q5tn3u9ggpx",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1s4zqg26he25pzvg6uxy3yfke7yxqzna57n4w70",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1w44u9dr2arp0v44exm3kw2284ezz83umleac9c",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1szsy5yzeun4779259gdhcd8rq8alf2c3zdmul3",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1pzayvp5m0q2sfe6079rrdkq3pvp4r9yp4xfgz4",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1rjkghz0f9cycgl8a64jcsp7c877xppg73ecahh",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera19j48hzgknr7n4n0qcmz5t2ukadnj99q3ch60xq",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1x6v6ack0r0nzg375vr2gp74resdjkk4auwslpl",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1t7w8tadkz4sxycuamkjwl9wuuf6lurkl64xals",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera16r8fr455740r4pfq9x6jr3q03wa6e5nnlepykr",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1u82vm3c9jswn6h6w2ww53sp6swmssn4fsq000e",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1kh2j6atk9uetrg5jhl44ce5uyd9jlne2uxl5f2",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera12enffkccgx5a83t40f29u6ydw7r809d3ch3f8a",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "1000000"
-            }
-          ]
-        },        
-        {
-          "address": "lumera1zudwyl92rgzess5722whhthd9am0q8qeekgqcy",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "12499973000000"
-            }
-          ]
         }
       ],
       "supply": [
         {
           "denom": "ulume",
-          "amount": "231250000000000"
+          "amount": "231250001000000"
         }
       ],
       "denom_metadata": [

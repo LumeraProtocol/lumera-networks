@@ -1,7 +1,7 @@
 {
   "app_name": "lumerad",
-  "app_version": "0.4.0",
-  "genesis_time": "2025-01-24T00:00:00.000000000Z",
+  "app_version": "0.4.1",
+  "genesis_time": "2025-01-24T00:00:00.00Z",
   "chain_id": "lumera-testnet-1",
   "initial_height": 1,
   "app_hash": null,
@@ -17,11 +17,12 @@
         "sig_verify_cost_secp256k1": "1000"
       },
       "accounts": [
+
         {
-          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera1x3rh59nlz20e7x06c6v2z0ay4knkkchthmxnxj",
+              "address": "lumera1x3ww6fgh7f48yq86q0425jparh0c65hherh302",
               "pub_key": null,
               "account_number": "0",
               "sequence": "0"
@@ -29,20 +30,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "14375000000000"
+                "amount": "5000000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1737867600"
-          },
-          "start_time": "1737435600"
+            "end_time": "1740286800"
+          }
         },
         {
-          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera16r4zq9lesar54usg0s2v5peznyxaspzp6zak20",
+              "address": "lumera13lygh3kc7ptmsv3uxdskmlacn46c64s5syk7vv",
               "pub_key": null,
               "account_number": "1",
               "sequence": "0"
@@ -50,20 +50,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "14375000000000"
+                "amount": "5000000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1737867600"
-          },
-          "start_time": "1737435600"
+            "end_time": "1740805200"
+          }
         },
         {
-          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera1076xyc3n7dvchhvg9qvyqtk043fzwazqk3akrp",
+              "address": "lumera1kjgqq6t0vhqcxfc6mxpkhat0nld44eus438jyp",
               "pub_key": null,
               "account_number": "2",
               "sequence": "0"
@@ -71,20 +70,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "14375000000000"
+                "amount": "5000000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1737867600"
-          },
-          "start_time": "1737435600"
+            "end_time": "1741323600"
+          }
         },
         {
-          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera16gepqgqlu6xkwfedgn0c0mevfhsq6ews09t4hn",
+              "address": "lumera17e775lsphtk07rcpcsedap4n6wlxcqj0nhgye9",
               "pub_key": null,
               "account_number": "3",
               "sequence": "0"
@@ -92,20 +90,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "14375000000000"
+                "amount": "5000000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1737867600"
-          },
-          "start_time": "1737435600"
+            "end_time": "1741842000"
+          }
         },
         {
-          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera148dm23cl4vyzkn8p9exxguksese75mgkudym0c",
+              "address": "lumera1pfhnk0lnnsf797r58m0glk67ar8uawenh44nfa",
               "pub_key": null,
               "account_number": "4",
               "sequence": "0"
@@ -113,20 +110,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "25000000000000"
+                "amount": "5000000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1738386000"
-          },
-          "start_time": "1737435600"
+            "end_time": "1742360400"
+          }
         },
         {
-          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera1zndv6law6u8zfgsl6njesk80v8hfsenyp7azyz",
+              "address": "lumera1plgv2rygyrt3e7g3z5wnw0ndml2367x54dymyq",
               "pub_key": null,
               "account_number": "5",
               "sequence": "0"
@@ -134,20 +130,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "28125000000000"
+                "amount": "6250000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1739422800"
-          },
-          "start_time": "1737435600"
+            "end_time": "1740200400"
+          }
         },
         {
           "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera1m2mnyasqwgrkqes2p99yqqzslas85306fuygw2",
+              "address": "lumera1qjajwp3432yq5txq4g4ahxl8huvrp0jvy28g6k",
               "pub_key": null,
               "account_number": "6",
               "sequence": "0"
@@ -155,19 +150,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "28125000000000"
+                "amount": "6250000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1739422800"
+            "end_time": "1740459600"
           }
         },
         {
           "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera13ldl9s29vrmcmhq43n98mlkv9cdh640ec57asz",
+              "address": "lumera1m4zz9kxm8nqkcp8u97x9y7em8wuu488cn77dpl",
               "pub_key": null,
               "account_number": "7",
               "sequence": "0"
@@ -180,14 +175,14 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1739422800"
+            "end_time": "1740718800"
           }
         },
         {
           "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera1xk6xspdzdshca98e4wr0ssmrxjcyrrh8kf5hkt",
+              "address": "lumera1qxq2jtz7vsjkhxn4yre3nmmr90h0hd7fhhhchu",
               "pub_key": null,
               "account_number": "8",
               "sequence": "0"
@@ -195,19 +190,19 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "25000000000000"
+                "amount": "6250000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1738904400"
+            "end_time": "1740978000"
           }
         },
         {
           "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
           "base_vesting_account": {
             "base_account": {
-              "address": "lumera1a5ks93lpaap43c663c3t9ms52snlj4aatlqqp5",
+              "address": "lumera1cx9qg7f2ewf8egcrxrxe23ceejdjrfxsmn6nlk",
               "pub_key": null,
               "account_number": "9",
               "sequence": "0"
@@ -215,26 +210,589 @@
             "original_vesting": [
               {
                 "denom": "ulume",
-                "amount": "37500000000000"
+                "amount": "6250000000000"
               }
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "1738904400"
+            "end_time": "1741237200"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1d7ffgqwuw0l5hzsjxm7l0zetszgyk6ge0q6k7h",
+              "pub_key": null,
+              "account_number": "10",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "6250000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741496400"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1uxyfd5e3rxfkm8jgh9zd0lh35dr8wpqmmnwu04",
+              "pub_key": null,
+              "account_number": "11",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "8333333340000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740373200"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1r65j3rjjxda3ueymqtaxlswp0694cemvtnqf2p",
+              "pub_key": null,
+              "account_number": "12",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "8333333340000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740891600"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1xgahg3lhzqv6hyvgmhgyenrpewftv2xfn4yzd6",
+              "pub_key": null,
+              "account_number": "13",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "8333333330000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741410000"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1lnwttpjrx4v56msv7cgffhj0ptjvp3p9tslj58",
+              "pub_key": null,
+              "account_number": "14",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "8333333330000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741928400"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1qca56eahxzgje7ws6x2njfv79zpuyn922arsnu",
+              "pub_key": null,
+              "account_number": "15",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "8333333330000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1742446800"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera19crkfe75h4jfrf968my0lkg6nljw9zf8c5uud9",
+              "pub_key": null,
+              "account_number": "16",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "8333333330000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1742965200"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1wj4vvr44kzxmj9cuvk9kf9cvq7r7n5kxg7mdtz",
+              "pub_key": null,
+              "account_number": "17",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "1250000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740805200"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1dpdcxfwalepks44xsd5kwj8sg54s3uqn6dlc64",
+              "pub_key": null,
+              "account_number": "18",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "1250000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741064400"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1j4slunrm4ccunxqwv3vw2k26n6zysteq7sg20m",
+              "pub_key": null,
+              "account_number": "19",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "1250000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741323600"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1nlqcgds439x2ewnhadwkv5gtuxs4k02h8q3xs7",
+              "pub_key": null,
+              "account_number": "20",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "1250000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741582800"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1cmfpjkqqvuew72r9aadd8e0w86q7536sc4dnh8",
+              "pub_key": null,
+              "account_number": "21",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "1250000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1741842000"
           }
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "lumera1evxgcuakd788hgq6kyl595eemfj8a2mx8k9prw",
+          "address": "lumera1zudwyl92rgzess5722whhthd9am0q8qeekgqcy",
           "pub_key": null,
-          "account_number": "10",
+          "account_number": "22",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1xes0fz04lhlrjyhncf3xx3yxkjhfurdtpfu4u0",
+              "pub_key": null,
+              "account_number": "23",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740027600"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1l2puzfn43h3p8rm5kxw0j6rft8gvqe96t9weqt",
+              "pub_key": null,
+              "account_number": "24",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740114000"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1jxmr2evmypemp2mfms95j2nd09l2dmfc0dwz6z",
+              "pub_key": null,
+              "account_number": "25",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740200400"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1c48r5hu8se5cea5l2lyd7r800mv9w9875gauh3",
+              "pub_key": null,
+              "account_number": "26",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740286800"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera145v9wjwpehm7zzrkultjuvuu0t2y0wmz0tyuwv",
+              "pub_key": null,
+              "account_number": "27",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740373200"
+          }
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera152vkjd8gxz6gdwy5yry0eyh532fhhpydqd2739",
+              "pub_key": null,
+              "account_number": "28",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740459600"
+          }
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1slt5dhxyl7caa58ctd2q3df5ry8e56gsdsg9z6",
+          "pub_key": null,
+          "account_number": "29",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "lumera1rew6tp6kjg2lu7e6ngg4q4dshn369pcm4jztyc",
+              "pub_key": null,
+              "account_number": "30",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "ulume",
+                "amount": "12500000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1740805200"
+          },
+          "start_time": "1739854800"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera14p3zcjmcmrffmzqr33xzkd2nwf0jlwteyne70t",
+          "pub_key": null,
+          "account_number": "31",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "lumera1npylpukqhcy3aslknp6rwn63z08elm3qjgncn8",
+          "address": "lumera1prdknqxwqzuw6g3lu5ejj4zxj7rl4y7l24gndz",
           "pub_key": null,
-          "account_number": "11",
+          "account_number": "32",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1jj2n76ehy5x5vcys5xzcvdwqz6mp48rsjg3yhk",
+          "pub_key": null,
+          "account_number": "33",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera19w2488ntfgpduzqq3sk4j5x387zynwkntws20l",
+          "pub_key": null,
+          "account_number": "34",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1mcal5wktxs7yzxusz78mvfvdgxatzcdwk6a9km",
+          "pub_key": null,
+          "account_number": "35",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera13kwez5vpcff3wlur4f5mfqg8zhnw7xmc33e4rn",
+          "pub_key": null,
+          "account_number": "36",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1h0q29qxftcs59x6erp8fms7uhenaagqrych7ex",
+          "pub_key": null,
+          "account_number": "37",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1jt9w26mpxxjsk63mvd4m2ynj0af09cslm77a8r",
+          "pub_key": null,
+          "account_number": "38",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera19gca4nhxjd82a72axwswarg748lqpr8mqzk8tf",
+          "pub_key": null,
+          "account_number": "39",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1qnnencw6ez6p4cleev9rqxerle00z0rmkk6236",
+          "pub_key": null,
+          "account_number": "40",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1h56jtjhaagywrw7h40d3crnw0fgh3z4wpqnlet",
+          "pub_key": null,
+          "account_number": "41",
+          "sequence": "0"  
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera13kz4tdr0ptllpzmz66py3p6kfv8jvrrv8zkyzm",
+          "pub_key": null,
+          "account_number": "42",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1lqf3cy2kens2tpsr4srs2jysmpau9quajx7l62",
+          "pub_key": null,
+          "account_number": "43",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera15r0nwg2v3jw9rw4dtuqv6jzsdyrze3kd73c8tm",
+          "pub_key": null,
+          "account_number": "44",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1f2lgl4t28aw360ps4zyx7aafeh4q5tn3u9ggpx",
+          "pub_key": null,
+          "account_number": "45",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1s4zqg26he25pzvg6uxy3yfke7yxqzna57n4w70",
+          "pub_key": null,
+          "account_number": "46",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1w44u9dr2arp0v44exm3kw2284ezz83umleac9c",
+          "pub_key": null,
+          "account_number": "47",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1szsy5yzeun4779259gdhcd8rq8alf2c3zdmul3",
+          "pub_key": null,
+          "account_number": "48",
+          "sequence": "0"          
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1rjkghz0f9cycgl8a64jcsp7c877xppg73ecahh",
+          "pub_key": null,
+          "account_number": "49",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera16r8fr455740r4pfq9x6jr3q03wa6e5nnlepykr",
+          "pub_key": null,
+          "account_number": "50",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera19j48hzgknr7n4n0qcmz5t2ukadnj99q3ch60xq",
+          "pub_key": null,
+          "account_number": "51",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1u82vm3c9jswn6h6w2ww53sp6swmssn4fsq000e",
+          "pub_key": null,
+          "account_number": "52",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1pzayvp5m0q2sfe6079rrdkq3pvp4r9yp4xfgz4",
+          "pub_key": null,
+          "account_number": "53",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1x6v6ack0r0nzg375vr2gp74resdjkk4auwslpl",
+          "pub_key": null,
+          "account_number": "54",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1t7w8tadkz4sxycuamkjwl9wuuf6lurkl64xals",
+          "pub_key": null,
+          "account_number": "55",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "lumera1kh2j6atk9uetrg5jhl44ce5uyd9jlne2uxl5f2",
+          "pub_key": null,
+          "account_number": "56",
           "sequence": "0"
         }
       ]
@@ -248,44 +806,9 @@
         "default_send_enabled": true
       },
       "balances": [
+
         {
-          "address": "lumera1zndv6law6u8zfgsl6njesk80v8hfsenyp7azyz",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "28125000000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1x3rh59nlz20e7x06c6v2z0ay4knkkchthmxnxj",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "14375000000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1xk6xspdzdshca98e4wr0ssmrxjcyrrh8kf5hkt",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "25000000000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera1076xyc3n7dvchhvg9qvyqtk043fzwazqk3akrp",
-          "coins": [
-            {
-              "denom": "ulume",
-              "amount": "14375000000000"
-            }
-          ]
-        },
-        {
-          "address": "lumera13ldl9s29vrmcmhq43n98mlkv9cdh640ec57asz",
+          "address": "lumera1qxq2jtz7vsjkhxn4yre3nmmr90h0hd7fhhhchu",
           "coins": [
             {
               "denom": "ulume",
@@ -294,65 +817,506 @@
           ]
         },
         {
-          "address": "lumera1npylpukqhcy3aslknp6rwn63z08elm3qjgncn8",
+          "address": "lumera1qjajwp3432yq5txq4g4ahxl8huvrp0jvy28g6k",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "1000000000000"
+              "amount": "6250000000000"
             }
           ]
         },
         {
-          "address": "lumera148dm23cl4vyzkn8p9exxguksese75mgkudym0c",
+          "address": "lumera1qca56eahxzgje7ws6x2njfv79zpuyn922arsnu",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "25000000000000"
+              "amount": "8333333330000"
             }
           ]
         },
         {
-          "address": "lumera1evxgcuakd788hgq6kyl595eemfj8a2mx8k9prw",
+          "address": "lumera1pfhnk0lnnsf797r58m0glk67ar8uawenh44nfa",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "30000000000000"
+              "amount": "5000000000000"
             }
           ]
         },
         {
-          "address": "lumera16r4zq9lesar54usg0s2v5peznyxaspzp6zak20",
+          "address": "lumera1plgv2rygyrt3e7g3z5wnw0ndml2367x54dymyq",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "14375000000000"
+              "amount": "6250000000000"
             }
           ]
         },
         {
-          "address": "lumera16gepqgqlu6xkwfedgn0c0mevfhsq6ews09t4hn",
+          "address": "lumera1rew6tp6kjg2lu7e6ngg4q4dshn369pcm4jztyc",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "14375000000000"
+              "amount": "12500000000000"
             }
           ]
         },
         {
-          "address": "lumera1m2mnyasqwgrkqes2p99yqqzslas85306fuygw2",
+          "address": "lumera1r65j3rjjxda3ueymqtaxlswp0694cemvtnqf2p",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "28125000000000"
+              "amount": "8333333340000"
             }
           ]
         },
         {
-          "address": "lumera1a5ks93lpaap43c663c3t9ms52snlj4aatlqqp5",
+          "address": "lumera19crkfe75h4jfrf968my0lkg6nljw9zf8c5uud9",
           "coins": [
             {
               "denom": "ulume",
-              "amount": "37500000000000"
+              "amount": "8333333330000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1xgahg3lhzqv6hyvgmhgyenrpewftv2xfn4yzd6",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "8333333330000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1x3ww6fgh7f48yq86q0425jparh0c65hherh302",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "5000000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1xes0fz04lhlrjyhncf3xx3yxkjhfurdtpfu4u0",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1dpdcxfwalepks44xsd5kwj8sg54s3uqn6dlc64",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1d7ffgqwuw0l5hzsjxm7l0zetszgyk6ge0q6k7h",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "6250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1wj4vvr44kzxmj9cuvk9kf9cvq7r7n5kxg7mdtz",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1slt5dhxyl7caa58ctd2q3df5ry8e56gsdsg9z6",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera13lygh3kc7ptmsv3uxdskmlacn46c64s5syk7vv",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "5000000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1jxmr2evmypemp2mfms95j2nd09l2dmfc0dwz6z",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1j4slunrm4ccunxqwv3vw2k26n6zysteq7sg20m",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1nlqcgds439x2ewnhadwkv5gtuxs4k02h8q3xs7",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera152vkjd8gxz6gdwy5yry0eyh532fhhpydqd2739",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera145v9wjwpehm7zzrkultjuvuu0t2y0wmz0tyuwv",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1kjgqq6t0vhqcxfc6mxpkhat0nld44eus438jyp",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "5000000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1cx9qg7f2ewf8egcrxrxe23ceejdjrfxsmn6nlk",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "6250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1c48r5hu8se5cea5l2lyd7r800mv9w9875gauh3",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1cmfpjkqqvuew72r9aadd8e0w86q7536sc4dnh8",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1m4zz9kxm8nqkcp8u97x9y7em8wuu488cn77dpl",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "6250000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1uxyfd5e3rxfkm8jgh9zd0lh35dr8wpqmmnwu04",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "8333333340000"
+            }
+          ]
+        },
+        {
+          "address": "lumera17e775lsphtk07rcpcsedap4n6wlxcqj0nhgye9",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "5000000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1l2puzfn43h3p8rm5kxw0j6rft8gvqe96t9weqt",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12500000000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1lnwttpjrx4v56msv7cgffhj0ptjvp3p9tslj58",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "8333333330000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19gca4nhxjd82a72axwswarg748lqpr8mqzk8tf",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1prdknqxwqzuw6g3lu5ejj4zxj7rl4y7l24gndz",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1qnnencw6ez6p4cleev9rqxerle00z0rmkk6236",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19w2488ntfgpduzqq3sk4j5x387zynwkntws20l",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera13kwez5vpcff3wlur4f5mfqg8zhnw7xmc33e4rn",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1jj2n76ehy5x5vcys5xzcvdwqz6mp48rsjg3yhk",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1jt9w26mpxxjsk63mvd4m2ynj0af09cslm77a8r",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera14p3zcjmcmrffmzqr33xzkd2nwf0jlwteyne70t",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1h0q29qxftcs59x6erp8fms7uhenaagqrych7ex",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1mcal5wktxs7yzxusz78mvfvdgxatzcdwk6a9km",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1h56jtjhaagywrw7h40d3crnw0fgh3z4wpqnlet",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera13kz4tdr0ptllpzmz66py3p6kfv8jvrrv8zkyzm",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1lqf3cy2kens2tpsr4srs2jysmpau9quajx7l62",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera15r0nwg2v3jw9rw4dtuqv6jzsdyrze3kd73c8tm",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1f2lgl4t28aw360ps4zyx7aafeh4q5tn3u9ggpx",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1s4zqg26he25pzvg6uxy3yfke7yxqzna57n4w70",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1w44u9dr2arp0v44exm3kw2284ezz83umleac9c",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1szsy5yzeun4779259gdhcd8rq8alf2c3zdmul3",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1pzayvp5m0q2sfe6079rrdkq3pvp4r9yp4xfgz4",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1rjkghz0f9cycgl8a64jcsp7c877xppg73ecahh",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera19j48hzgknr7n4n0qcmz5t2ukadnj99q3ch60xq",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1x6v6ack0r0nzg375vr2gp74resdjkk4auwslpl",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1t7w8tadkz4sxycuamkjwl9wuuf6lurkl64xals",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera16r8fr455740r4pfq9x6jr3q03wa6e5nnlepykr",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1u82vm3c9jswn6h6w2ww53sp6swmssn4fsq000e",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1kh2j6atk9uetrg5jhl44ce5uyd9jlne2uxl5f2",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "1000000"
+            }
+          ]
+        },
+        {
+          "address": "lumera1zudwyl92rgzess5722whhthd9am0q8qeekgqcy",
+          "coins": [
+            {
+              "denom": "ulume",
+              "amount": "12499974000000"
             }
           ]
         }
@@ -360,12 +1324,11 @@
       "supply": [
         {
           "denom": "ulume",
-          "amount": "238500000000000"
+          "amount": "231250000000000"
         }
       ],
       "denom_metadata": [
         {
-          "name": "lume",
           "description": "The native token of lumera",
           "denom_units": [
             {
@@ -384,12 +1347,14 @@
             },
             {
               "denom": "lume",
-              "exponent": 6
+              "exponent": 6,
+              "aliases": []
             }
           ],
-          "symbol": "LUME",
           "base": "ulume",
           "display": "lume",
+          "name": "lume",
+          "symbol": "LUME",
           "uri": "",
           "uri_hash": ""
         }
@@ -413,7 +1378,7 @@
         "enable_claims": true,
         "max_claims_per_block": "100"
       },
-      "total_claimable_amount": "12383801540459"
+      "total_claimable_amount": "18749999981413"
     },
     "consensus": null,
     "crisis": {
@@ -594,10 +1559,10 @@
       "missed_blocks": [],
       "params": {
         "downtime_jail_duration": "600s",
-        "min_signed_per_window": "0.500000000000000000",
-        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.050000000000000000",
+        "signed_blocks_window": "1000",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
+        "slash_fraction_downtime": "0.001000000000000000"
       },
       "signing_infos": []
     },

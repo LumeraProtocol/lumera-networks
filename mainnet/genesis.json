@@ -2,7 +2,7 @@
   "app_name": "lumerad",
   "app_version": "1.1.0",
   "genesis_time": "2025-06-16T16:00:00Z",
-  "chain_id": "lumera_mainnet_76857769-1",
+  "chain_id": "lumera-mainnet-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {

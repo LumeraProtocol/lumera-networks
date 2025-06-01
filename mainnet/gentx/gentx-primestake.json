@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "PrimeStake",
+          "identity": "68548CEAA0AD362F",
+          "website": "https://primestake.top",
+          "security_contact": "",
+          "details": "Unmatched Reliability. 100% Uptime. Airdrop Ready. IBC Enabled. Community-Driven. App-Chain Innovator. Security First"
+        },
+        "commission": {
+          "rate": "0.050000000000000000",
+          "max_rate": "0.250000000000000000",
+          "max_change_rate": "0.050000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "",
+        "validator_address": "lumeravaloper1x9yv5wn5crax59j338rg4g9sz8x0kh9j4yhkh4",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "iQFqxuis50CpKTiv5+iYAt/lg20BZB5tzMZ9mdwbVxg="
+        },
+        "value": {
+          "denom": "ulume",
+          "amount": "1000000"
+        }
+      }
+    ],
+    "memo": "37215c07816d1aa47daef829c8e03bd34c0a9d91@127.0.0.1:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "A9DE8PxZWysy41FRosI4/L1GHyRDNA0thdZ9KKIUtzV0"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "vaG/hWBOg2B9an4i4g463+oc3QbfEg6oml53xyyrbV93WrJp1VdH05OoOq6h+hTW4V19xx85nBTM4w9+QwnoIA=="
+  ]
+}

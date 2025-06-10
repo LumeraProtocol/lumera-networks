@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "SyaNodes",
+          "identity": "AE04BDF0960C38E9",
+          "website": "https://docs.syanodes.my.id",
+          "security_contact": "monitor@syanodes.my.id",
+          "details": "SyaNodes an enthusiastic node runner is committed to running nodes for blockchain projects, committed to keeping abreast of industry advancements and informed, and passionate about using dependable and effective node operation to advance blockchain technology."
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.250000000000000000",
+          "max_change_rate": "0.050000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "",
+        "validator_address": "lumeravaloper1vw0hyupadaxy0p8uf6ges39nc2qx7cj8v48pq0",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "y8s0Fw9E8+iO8pJ/YB1iqC/er36sTBLn+pHZBBfOGRs="
+        },
+        "value": {
+          "denom": "ulume",
+          "amount": "1000000"
+        }
+      }
+    ],
+    "memo": "96e31fe375dd9531d2c2af79c3dae95f96a08e0d@195.3.223.128:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "Ak39DR7MUvkl1NxqaCbuIJwAxnVO/9p3SPUtoDtpuQoV"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "n3kTUPpv4m5OElyrVBrjmGB1kaU3D5KpityQ7vtBJOUbKrQG1aAWkITDmZHcmM7/Eo7YgEs6CE+Vj7trXT/Y1g=="
+  ]
+}

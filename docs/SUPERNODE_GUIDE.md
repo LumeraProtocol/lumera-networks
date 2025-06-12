@@ -11,7 +11,7 @@
 
 ## 1  Why run a SuperNode?
 
-SuperNodes add AI (“Sense”) and storage (“Cascade”) services on top of standard block validation and earn **Proof-of-Service (PoSe)** rewards in parallel with PoS staking rewards. Each validator may attach **one** SuperNode .
+SuperNodes add extra services (such as storage (“Cascade”), AI and others) on top of standard block validation and earn **Proof-of-Service (PoSe)** rewards in parallel with PoS staking rewards. Each validator may attach **one** SuperNode .
 
 ---
 

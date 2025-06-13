@@ -177,7 +177,34 @@ lumerad q supernode get $VALOPER \
 
 ---
 
-## 10  Every-day commands
+## 10  View logs
+
+```bash
+# View all SuperNode logs
+sudo journalctl -u supernode
+
+# Follow logs in real-time
+sudo journalctl -u supernode -f
+
+# View recent logs
+sudo journalctl -u supernode -n 50        # Last 50 lines
+sudo journalctl -u supernode --since today
+sudo journalctl -u supernode --since "1 hour ago"
+
+# View logs with precise timestamps
+sudo journalctl -u supernode -o short-precise
+
+# View only errors and warnings
+sudo journalctl -u supernode -p err
+sudo journalctl -u supernode -p warning
+
+# Check service status (includes recent logs)
+systemctl status supernode
+```
+
+---
+
+## 11  Every-day commands
 
 | Purpose             | Example                                                                  |
 | ------------------- | ------------------------------------------------------------------------ |
@@ -188,7 +215,7 @@ lumerad q supernode get $VALOPER \
 
 ---
 
-## 11  Security checklist
+## 12  Security checklist
 
 * **Separate hosts** – keep SuperNode away from the validator signing key .
 * Use `keyring.backend = os` (or HSM) for production.
@@ -198,7 +225,7 @@ lumerad q supernode get $VALOPER \
 
 ---
 
-## 12  Quick-start crib sheet (TL;DR)
+## 13  Quick-start crib sheet (TL;DR)
 
 1. `curl …/supernode-linux-amd64 | sudo tee /usr/local/bin/supernode && chmod +x`
 2. Write `config.yml`, point `grpc_addr` to **grpc.lumera.io:443**.

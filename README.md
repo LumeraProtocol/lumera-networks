@@ -7,10 +7,12 @@ This repository hosts Lumera Protocol Chain releases informat[i]()on and guides.
 **lumera-mainnet-1**
 
 #### Genesis
-Coming soon!
+[Mainned Genesis](mainnet/genesis.json)
 
 #### Minimum gas price
-Coming soon!
+```
+minimum-gas-prices = "0.025ulume"
+```
 
 #### Seeds
 Coming soon!
@@ -36,7 +38,7 @@ seeds = "10a50e7a88561b22a8d1f6f0fb0b8e54412229ab@seeds.lumera.io:26656"
 ```
 
 #### Explorer
-https://portal.lumera.io/lumera-testnet-1
+https://portal.testnet.lumera.io/lumera-testnet-1
 
 
 ## Guides

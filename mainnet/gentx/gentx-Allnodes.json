@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "Allnodes",
+          "identity": "3999DA33020A4DBC",
+          "website": "https://www.allnodes.com",
+          "security_contact": "support@allnodes.com",
+          "details": "Reliable non-custodial Validator run by the industry leader - Allnodes"
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "1.000000000000000000",
+          "max_change_rate": "0.050000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "",
+        "validator_address": "lumeravaloper1579jlmj5e77plurr4wzgxck96vufn5h0kqq8j4",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "47EKjKJARLEFjpK4+uy1f0Ke317tz+Rwu8qC9UeYfkE="
+        },
+        "value": {
+          "denom": "ulume",
+          "amount": "1000000"
+        }
+      }
+    ],
+    "memo": "7654d580c66c3282558b687aef5c031979db27a6@64.227.64.8:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AzD7bq4XDSFQ+KmNL/7W4UBno7ocqfa1jOXmt5Ps2sSG"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "xQCBku+P4FZRVRyP7WJMMsXYXA0mTBf6W6qeBZDK2oYs57RimHx9Ukw/J/59V9f2D7MrKYwryf7uQrLAdJB28Q=="
+  ]
+}

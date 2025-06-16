@@ -138,9 +138,9 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y jq curl
           curl -L \
-            https://github.com/LumeraProtocol/lumera/releases/download/v1.1.0/lumera_v1.1.0_linux_amd64.tar.gz \
-            -o lumera_v1.1.0_linux_amd64.tar.gz
-          tar -xzf lumera_v1.1.0_linux_amd64.tar.gz
+            https://github.com/LumeraProtocol/lumera/releases/download/v1.5.0/lumera_v1.5.0_linux_amd64.tar.gz \
+            -o lumera_linux_amd64.tar.gz
+          tar -xzf lumera_linux_amd64.tar.gz
           chmod +x lumerad
           sudo mv lumerad /usr/local/bin/
           sudo mv libwasmvm.x86_64.so /usr/local/lib/

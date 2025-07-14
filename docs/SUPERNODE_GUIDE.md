@@ -170,8 +170,6 @@ p2p:
   listen_address: 0.0.0.0
   port: 4445                    # DO NOT CHANGE - Required for P2P communication
   data_dir: data/p2p
-  bootstrap_nodes: ""
-  external_ip: ""               # Leave blank for auto-detection
 
 lumera:
   grpc_addr: "grpc.lumera.io:443"    # Public endpoint (no local node required)
@@ -592,8 +590,7 @@ sudo apt update && sudo apt upgrade
 | `p2p.listen_address` | IP address for P2P networking | **Yes** | - | `"0.0.0.0"` | Use `"0.0.0.0"` to listen on all interfaces |
 | `p2p.port` | P2P communication port | **Yes** | - | `4445` | **Do not change this default value** |
 | `p2p.data_dir` | Directory for P2P data storage | No | `"data/p2p"` | `"data/p2p"` | Relative paths are appended to basedir, absolute paths used as-is |
-| `p2p.bootstrap_nodes` | Initial peer nodes for network discovery | No | `""` | `""` | Comma-separated list of peer addresses, leave empty for auto-discovery |
-| `p2p.external_ip` | Your public IP address | No | `""` | `""` | Leave empty for auto-detection, or specify your public IP |
+
 | `lumera.grpc_addr` | gRPC endpoint of Lumera validator node | **Yes** | - | `"grpc.lumera.io:443"` | Must be accessible from supernode |
 | `lumera.chain_id` | Lumera blockchain chain identifier | **Yes** | - | `"lumera-mainnet-1"` | Must match the actual chain ID |
 | `raptorq.files_dir` | Directory to store RaptorQ files | No | `"raptorq_files"` | `"raptorq_files"` | Relative paths are appended to basedir, absolute paths used as-is |

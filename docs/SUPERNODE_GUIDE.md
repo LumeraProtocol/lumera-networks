@@ -8,15 +8,6 @@ This guide provides comprehensive instructions for validator operators who wish 
 
 ---
 
-## Pre-flight Checklist
-
-Gather the following information before starting:
-
-- [ ] SuperNode host public IP address
-- [ ] Access to validator host (for registration commands)
-
----
-
 ## Step 1: Prerequisites
 
 ### System Requirements
@@ -31,11 +22,7 @@ Ensure your SuperNode host meets the following minimum requirements:
 | **Network** | 1 Gbps | 5 Gbps | Stable internet connection |
 | **OS** | Ubuntu 22.04 LTS+ | Ubuntu 22.04 LTS+ | Install `build-essential` |
 
-### Network Requirements
 
-Your SuperNode host must have the following ports open for inbound traffic:
-- **Port 4444** (gRPC/API)
-- **Port 4445** (P2P) - **Do not change this port**
 
 ### Validator Prerequisites
 
@@ -60,12 +47,7 @@ Verify that your validator meets the minimum staking requirements.
 ### Check Current Validator Stake
 
 ```bash
-# Replace <your_validator_key_name> with your actual validator key name
-VALOPER=$(lumerad keys show <your_validator_key_name> --bech val -a)
-echo "Validator Address: $VALOPER"
-
-# Check current validator status and stake
-lumerad q staking validator $VALOPER
+lumerad query staking validator lumeravaloper1tzghn.............
 ```
 
 **Verify Requirements:**
@@ -74,7 +56,6 @@ lumerad q staking validator $VALOPER
   Mainnet Stake ≥ `25000000000000` (25,000 LUME in ulume)
   Testnet Stake ≥ `10000000000000` (10,000 LUME in ulume)
   
-> **Note:** If commands fail, you may need to add the `--keyring-backend <backend>` flag matching your validator's keyring configuration (e.g., `file`, `os`, `test`).
 
 ### Add Additional Stake (if required)
 
@@ -138,43 +119,29 @@ supernode version
 
 **Host:** SuperNode Host
 
-#### Option A: Initialize and Create a New Key
 <details>
 <summary><strong>Mainnet</strong></summary>
 
 ```bash
-supernode init <your_supernode_key_name> --chain-id lumera-mainnet-1
+supernode init 
 ```
+Lumera Chain ID : lumera-mainnet-1
+Lumera grpc Address : https://grpc.lumera.io
 </details>
 <details open>
 <summary><strong>Testnet</strong></summary>
 
 ```bash
-supernode init <your_supernode_key_name> --chain-id lumera-testnet-2
+supernode init 
 ```
-</details>
 
-> **Security:** Store your mnemonic phrase and keyring password securely. They are required for key recovery.
-
-#### Option B: Recover an Existing Key
-<details>
-<summary><strong>Mainnet</strong></summary>
-
-```bash
-supernode init <your_supernode_key_name> --recover --mnemonic "<your_24_word_mnemonic_phrase>" --chain-id lumera-mainnet-1
-```
-</details>
-<details open>
-<summary><strong>Testnet</strong></summary>
-
-```bash
-supernode init <your_supernode_key_name> --recover --mnemonic "<your_24_word_mnemonic_phrase>" --chain-id lumera-testnet-2
-```
+Lumera Chain ID : lumera-testnet-2
+Lumera GRPC Adress : https://grpc.testnet.lumera.io
 </details>
 
 > **Important:** After initializing, ensure the new SuperNode account address has funds for gas fees.
 
-### Edit Configuration File
+### Verify Configuration File (Optional)
 
 The `supernode init` command creates a configuration file at `~/.supernode/config.yml`. Verify its contents.
 <details>
@@ -429,3 +396,10 @@ sequenceDiagram
     Note right of Operator: Query the chain to confirm the SuperNode is `ACTIVE`.
     Validator Host-->>Operator: Status: ACTIVE
 ```
+
+
+### Network Requirements
+
+Your SuperNode host must have the following ports open for inbound traffic:
+- **Supernode grpc Port 4444** (gRPC/API) When using default
+- **Port 4445** (P2P) 

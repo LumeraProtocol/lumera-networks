@@ -17,6 +17,7 @@ minimum-gas-prices = "0.025ulume"
 
 #### Seeds
 ```
+seeds = "f64b9efc5747cc3556bdc281dab930a716dd63af@seeds.lumera.io:26656"
 ```
 
 #### Explorer

@@ -293,7 +293,7 @@ After=network-online.target
 [Service]
 User=<YOUR_USER>
 ExecStart=/usr/local/bin/supernode start --basedir /home/<YOUR_USER>/.supernode
-Restart=on-failure
+Restart=always
 RestartSec=5
 LimitNOFILE=65536
 
@@ -354,7 +354,7 @@ After=network-online.target
 [Service]
 User=<YOUR_USER>
 ExecStart=/usr/local/bin/sn-manager start
-Restart=on-failure
+Restart=always
 RestartSec=10
 LimitNOFILE=65536
 Environment="HOME=/home/<YOUR_USER>"

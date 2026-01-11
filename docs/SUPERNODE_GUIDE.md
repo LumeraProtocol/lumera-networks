@@ -125,7 +125,7 @@ echo "$VALOPER"
 #### Download and extract
 
 ```bash
-curl -L <https://github.com/LumeraProtocol/supernode/releases/latest/download/supernode-linux-amd64.tar.gz> | tar -xz
+curl -L https://github.com/LumeraProtocol/supernode/releases/latest/download/supernode-linux-amd64.tar.gz | tar -xz
 
 ```
 
@@ -189,6 +189,8 @@ journalctl -u sn-manager -f
 
 ```
 
+Note: systemd does not inherit your shell’s environment. If you initialized with `--keyring-passphrase-env SUPERNODE_PASSPHRASE`, set `SUPERNODE_PASSPHRASE` in the systemd unit via `Environment=` or `EnvironmentFile=`.
+
 ### A3) Initialize SuperNode via `sn-manager` (creates or imports your `SN_ACCOUNT` key)
 
 > Note: Unrecognized flags to sn-manager init are passed through to supernode init.
@@ -204,31 +206,34 @@ sn-manager init
 ```bash
 export SUPERNODE_PASSPHRASE="your-secure-passphrase"
 
-sn-manager init -y \\
-  --auto-upgrade \\
-  --keyring-backend file \\
-  --keyring-passphrase-env SUPERNODE_PASSPHRASE \\
-  --key-name mySNKey \\
-  --supernode-addr 0.0.0.0 \\
-  --supernode-port 4444 \\
-  --lumera-grpc <https://grpc.lumera.io:443> \\
+sn-manager init -y \
+  --auto-upgrade \
+  --keyring-backend file \
+  --keyring-passphrase-env SUPERNODE_PASSPHRASE \
+  --key-name mySNKey \
+  --supernode-addr 0.0.0.0 \
+  --supernode-port 4444 \
+  --lumera-grpc https://grpc.lumera.io:443 \
   --chain-id <CHAIN_ID>
 ```
 
 #### If using Option 3 (recover an existing SN_ACCOUNT key)
 
+If you use `-y` with `--recover`, you must also provide `--mnemonic` (or omit `-y` and follow the interactive prompts).
+
 ```bash
 export SUPERNODE_PASSPHRASE="your-secure-passphrase"
 
-sn-manager init -y \\
-  --auto-upgrade \\
-  --keyring-backend file \\
-  --keyring-passphrase-env SUPERNODE_PASSPHRASE \\
-  --key-name mySNWallet \\
-  --recover \\
-  --supernode-addr 0.0.0.0 \\
-  --supernode-port 4444 \\
-  --lumera-grpc <https://grpc.lumera.io:443> \\
+sn-manager init -y \
+  --auto-upgrade \
+  --keyring-backend file \
+  --keyring-passphrase-env SUPERNODE_PASSPHRASE \
+  --key-name mySNWallet \
+  --recover \
+  --mnemonic "word1 word2 ... word24" \
+  --supernode-addr 0.0.0.0 \
+  --supernode-port 4444 \
+  --lumera-grpc https://grpc.lumera.io:443 \
   --chain-id <CHAIN_ID>
 ```
 
@@ -256,8 +261,8 @@ Run this on the machine that has the `SN_ACCOUNT` key (often the SuperNode host)
 
 ```bash
 VALOPER="<lumeravaloper...>"
-lumerad tx staking delegate "$VALOPER" <amount>ulume \\
-  --from <sn_key_name> \\
+lumerad tx staking delegate "$VALOPER" <amount>ulume \
+  --from <sn_key_name> \
   --chain-id <CHAIN_ID> --gas auto --gas-adjustment 1.3 --fees 7000ulume
 ```
 
@@ -265,8 +270,8 @@ lumerad tx staking delegate "$VALOPER" <amount>ulume \\
 
 ```bash
 VALOPER=$(lumerad keys show <val_key> --bech val -a)
-lumerad tx staking delegate "$VALOPER" <small_amount>ulume \\
-  --from <val_key> \\
+lumerad tx staking delegate "$VALOPER" <small_amount>ulume \
+  --from <val_key> \
   --chain-id <CHAIN_ID> --gas auto --gas-adjustment 1.3 --fees 7000ulume
 ```
 
@@ -279,9 +284,9 @@ VALOPER=$(lumerad keys show <val_key> --bech val -a)
 SN_ENDPOINT="<SN_PUBLIC_IP>:4444"
 SN_ACCOUNT="<lumera1...>"
 
-lumerad tx supernode register-supernode \\
-  "$VALOPER" "$SN_ENDPOINT" "$SN_ACCOUNT" \\
-  --from <val_key> --chain-id <CHAIN_ID> \\
+lumerad tx supernode register-supernode \
+  "$VALOPER" "$SN_ENDPOINT" "$SN_ACCOUNT" \
+  --from <val_key> --chain-id <CHAIN_ID> \
   --gas auto --gas-adjustment 1.3 --fees 5000ulume
 ```
 
@@ -316,8 +321,8 @@ Use this if you want to fully manage installation and upgrades yourself.
 ### B1) Install SuperNode binary (SuperNode host)
 
 ```bash
-sudo curl -L -o /usr/local/bin/supernode \\
-  <https://github.com/LumeraProtocol/supernode/releases/latest/download/supernode-linux-amd64>
+sudo curl -L -o /usr/local/bin/supernode \
+  https://github.com/LumeraProtocol/supernode/releases/latest/download/supernode-linux-amd64
 sudo chmod +x /usr/local/bin/supernode
 supernode version
 ```
@@ -328,9 +333,9 @@ If your keyring backend is `file` or `os`, you must provide a passphrase at init
 
 Supported:
 
-- `-keyring-passphrase`
-- `-keyring-passphrase-env`
-- `-keyring-passphrase-file`
+- `--keyring-passphrase`
+- `--keyring-passphrase-env`
+- `--keyring-passphrase-file`
 
 Example:
 
@@ -366,7 +371,7 @@ After=network-online.target
 
 [Service]
 User=<YOUR_USER>
-ExecStart=/usr/local/bin/supernode start --home /home/<YOUR_USER>/.supernode
+ExecStart=/usr/local/bin/supernode start --basedir /home/<YOUR_USER>/.supernode
 Restart=on-failure
 RestartSec=5
 LimitNOFILE=65536
@@ -385,6 +390,8 @@ journalctl -u supernode -f
 
 ```
 
+Note: systemd does not inherit your shell’s environment. If your keyring is configured with `--keyring-passphrase-env`, set that environment variable in the systemd unit via `Environment=` or `EnvironmentFile=`.
+
 ### B5) Find your `SN_ACCOUNT` address
 
 ```bash
@@ -401,8 +408,8 @@ Same as in Path A:
 
 ```bash
 VALOPER="<lumeravaloper...>"
-lumerad tx staking delegate "$VALOPER" <amount>ulume \\
-  --from <sn_key_name> \\
+lumerad tx staking delegate "$VALOPER" <amount>ulume \
+  --from <sn_key_name> \
   --chain-id <CHAIN_ID> --gas auto --gas-adjustment 1.3 --fees 7000ulume
 ```
 
@@ -410,8 +417,8 @@ Keep some validator self-delegation (non-zero):
 
 ```bash
 VALOPER=$(lumerad keys show <val_key> --bech val -a)
-lumerad tx staking delegate "$VALOPER" <small_amount>ulume \\
-  --from <val_key> \\
+lumerad tx staking delegate "$VALOPER" <small_amount>ulume \
+  --from <val_key> \
   --chain-id <CHAIN_ID> --gas auto --gas-adjustment 1.3 --fees 7000ulume
 ```
 
@@ -422,9 +429,9 @@ VALOPER=$(lumerad keys show <val_key> --bech val -a)
 SN_ENDPOINT="<SN_PUBLIC_IP>:4444"
 SN_ACCOUNT="<lumera1...>"
 
-lumerad tx supernode register-supernode \\
-  "$VALOPER" "$SN_ENDPOINT" "$SN_ACCOUNT" \\
-  --from <val_key> --chain-id <CHAIN_ID> \\
+lumerad tx supernode register-supernode \
+  "$VALOPER" "$SN_ENDPOINT" "$SN_ACCOUNT" \
+  --from <val_key> --chain-id <CHAIN_ID> \
   --gas auto --gas-adjustment 1.3 --fees 5000ulume
 ```
 
@@ -436,7 +443,7 @@ lumerad tx supernode register-supernode \\
 
 ```bash
 VALOPER=$(lumerad keys show <val_key> --bech val -a)
-lumerad q supernode get-super-node "$VALOPER"
+lumerad q supernode get-supernode "$VALOPER"
 ```
 
 Expected state: `SUPERNODE_STATE_ACTIVE`
@@ -502,7 +509,7 @@ Remove any `/usr/local/bin/sn-manager` copy and ensure `command -v sn-manager` r
 
 **After**
 
-- [ ]  query `get-super-node` and confirm `ACTIVE`
+- [ ]  query `get-supernode` and confirm `ACTIVE`
 - [ ]  monitor service logs and system health
 
 ---

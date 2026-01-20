@@ -21,7 +21,8 @@ It can be
 
 ### 1.1 Validator prerequisites
 
-- Validator is installed, configured, and **bonded**
+- Validator is installed, configured, and running.
+  - NOTE: The validator can be in the **bonded** or **unbondig**
 - You control the validator operator key (`<val_key>`) on the validator host
 
 ### 1.2 SuperNode host requirements
@@ -452,7 +453,7 @@ If you see stake/eligibility failures:
 
 - confirm validator has **non-zero** self-delegation
 - confirm `SN_ACCOUNT` you registered is the same account that delegated to your validator
-- confirm the delegation from `SN_ACCOUNT` to your validator exists and is bonded/active
+- confirm the delegation of at least 25K (on **mainnet**) from `SN_ACCOUNT` to your validator exists
 
 ---
 
